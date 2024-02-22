@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move</title>
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="signup.html">
+</head>
+
+<body>
+    <section id="home">
+        <!-- الشريط الجانبي -->
+        <div id="mySidebar" class="sidebar">
+            <div class="icon">
+                <i id="sidebarIcon" class=" fa-solid fa-bars fs-3 "></i>
+            </div>
+            <div class="nav-item ">
+                <ul>
+                    <li class="item1" style="opacity: 1; padding-top: 20px;"><a class="nav-category" href="#">Now
+                            playing</a></li>
+                    <li class="item2" style="opacity: 1; padding-top: 20px;"><a class="nav-category"
+                            href="#">popular</a></li>
+                    <li class="item3" style="opacity: 1; padding-top: 20px;"><a class="nav-category" href="#">top_rated
+                        </a></li>
+                    <li class="item5" style="opacity: 1; padding-top: 20px;"><a class="nav-category"
+                            href="#">trending</a></li>
+                    <li class="item6" style="opacity: 1; padding-top: 20px;"><a class="nav-category"
+                            href="#">upcoming</a></li>
+                    <li class="item6" style="opacity: 1; padding-top: 20px;"><a class="nav-category"
+                            href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="div py-5">
+                <div class="nav-social-item py-5">
+                    <a href="#"><i class="fab fa-facebook-f fs-4 px-2"></i></a>
+                    <a href="#"><i class="fab fa-twitter fs-4 px-2"></i></a>
+                    <a href="#"><i class="fas fa-globe fs-4"></i></a>
+                    <div class="pt-3 px-2">
+                        <span class="text-muted fw-bolder">Copyright © 2022 All Rights Reserved.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- محتوى الصفحة -->
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6 mb-3">
+                    <div class="input-group mb-3">
+                        <input type="text" id="categoryInput"
+                            class="form-control mb-5 text-white rounded-2 bg-transparent border-0 border-bottom"
+                            placeholder="Enter category...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control text-white rounded-2 bg-transparent border-0 border-bottom" id="search"
+                        placeholder="Search...">
+                </div>
+                <div id="rowcalls" class="row">
+                    <!-- هنا سيتم إضافة الأفلام بواسطة JavaScript -->
+                </div>
+            </div>
+
+            <section id="contact" class="sec3 container mx-auto my-5 ">
+                <h2 class="text-light my-3">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control-plaintext border-1 border-white rounded-2 my-3 text-white p-2"
+                                id="name" placeholder="Enter Your Name">
+                            <div class="alert alert-danger fw-bold border-3 border-danger" id="EmailAlert" role="alert">
+                                Enter valid Email
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control-plaintext border-1 border-white rounded-2  my-3 text-white p-2"
+                                id="email" placeholder="Enter Email">
+                            <div class="alert alert-danger fw-bold border-3 border-danger" id="emailAlert" role="alert">
+                                Enter valid Email
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control-plaintext border-1 border-white rounded-2  my-3 text-white p-2"
+                                id="phone" placeholder="Enter phone">
+                            <div class="alert alert-danger fw-bold border-3 border-danger" id="phoneAlert" role="alert">
+                                Enter valid phone
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control-plaintext border-1 border-white rounded-2  my-3 text-white p-2"
+                                id="age" placeholder="Enter Age">
+                            <div class="alert alert-danger fw-bold border-3 border-danger" id="ageAlert" role="alert">
+                                Enter valid Age
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control-plaintext border-1 border-white rounded-2  my-3 text-white p-2"
+                                type="password" id="password" placeholder="Enter Password">
+                            <div class="alert alert-danger fw-bold border-3 border-danger" id="passwordAlert"
+                                role="alert">
+                                Enter valid password *Minimum 8 characters, at least one letter and one number:*
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control-plaintext border-1 border-white rounded-2 my-3 text-white p-2"
+                                type="password" id="rePassword" placeholder="Enter RePassword">
+                            <div class="alert alert-danger fw-bold border-3 border-danger" id="rePasswordAlert"
+                                role="alert">
+                                Enter valid Repassword
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="submitBtn" class="btn btn-outline-danger fs-4 disabled">Submit</button>
+            </section>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
